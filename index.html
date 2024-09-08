@@ -6,19 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Resume</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
-    <h1>Static Resume</h1>
+    <h1>Resume Builder</h1>
+    <form action="">
+        <div class="personalInformation">
+            <div class="section1">
+                <h2>Personal Information</h2>
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="contact">
+                    <label for="contact">Contact</label>
+                    <input  type="number" name="number" id="number">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input  type="email" name="email" id="email">
+                </div>
+            </div>
+            <div class="sectiontwo">
+               <img src="/src/profile.webp" alt="">
+                <input type="file" accept="image/*" id="picture">
+            </div>
+        </div>
+
+
+       
+            <div class="Education">
+              
+                <h2>Education</h2>
+                <label for="education">Education</label>
+                <textarea  name="education" id="education"></textarea>
+         
+            </div>
+        
+        <div class="Experience">
+            <h2>Experience</h2>
+            <label for="experience">Experience</label>
+            <textarea  name="experience" id="experience" ></textarea>
+        </div>
+        <div class="Skills">
+            <h2>Skills</h2>
+            <label for="skills">Skills</label>
+            <textarea  name="skills" id="skills" ></textarea>
+        </div>
+        <button>Generate Resume</button>
+    </form>
+
+    <!-- user resume -->
     <div class="resume">
         <div class="personalInfo">
             <div class="section1">
                 <h2>Personal Information</h2>
-                <ul>
-                    <li>Name: <b>Alishba Ahmed khan.</b></li>
-                    <li>Contact: <b>0312096899</b></li>
-                    <li>Email: <a href="">alishba@gmail.com</a></li>
-                </ul>
+                
+                <div class="detail" id="userNameresume"></div>
+                <div class="detail" id="userContactresume"></div>
+                <div class="detail" id="userEmailresume"></div>
             </div>
             <div class="section2">
                 <img src="src/profile.webp" alt="">
@@ -27,18 +75,13 @@
         <div class="education">
             <h2>Education</h2>
             <ul>
-                <li>Matriculation in science from</li>
-                <b>CRESCENT GRAMMER SCHOOL</b>
-                <li>Intermediate in Humanities from</li>
-                <b>WOMEN'S COLLEGE</b>
-                <li>Doing Web & App development course from</li>
-                <b>SMIT</b>
+                <div class="detail" id="userEducationresume"></div>                
             </ul>
 
         </div>
         <div class="experience">
             <h2>Experience</h2>
-            <p>~Fresher</p>
+               <div class="detail" id="userExperienceresume"></div>
         </div>
         <div class="skills-btn">
             <h2>Skills</h2>
@@ -46,15 +89,11 @@
         </div>
         <div class="skills">
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>TYPESCRIPT</li>
-            </ul>
+           <div class="detail" id="userSkillsresume"></div>
         </div>
-
+    
     </div>
+    <button id="download"  onclick="download()">Download</button>
     <script src="src/script.js"></script>
 </body>
 

@@ -1,0 +1,113 @@
+h1 {
+  padding-top: 10px;
+}
+.resume {
+  display: none;
+}
+form {
+  margin: auto;
+  max-width: 600px;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 4px 4px 5px 0px grey, 0px 6px 5px 0px grey;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.personalInformation {
+  display: flex;
+  height: 250px;
+  padding: 20px;
+}
+
+.sectionone {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sectiontwo {
+  height: 150px;
+  width: 200px;
+  background-color: #f0f0f0;
+  margin-top: 80px;
+  text-align: center;
+  margin-left: 30px;
+}
+#picture {
+  width: 200px;
+  height: 20px;
+  background-color: #b7b1b1;
+}
+.sectiontwo img {
+  height: 80%;
+  width: 100%;
+}
+textarea {
+  padding: 20px;
+}
+
+input {
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.name,
+.email,
+.contact,
+.Education,
+.Experience,
+.Skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+}
+.Education {
+  padding: 10px 40px;
+  height: 100px;
+  margin-top: 10px;
+}
+.Experience {
+  padding: 10px 40px;
+  height: 100px;
+  margin-top: 20px;
+}
+.Skills {
+  padding: 10px 40px;
+  height: 100px;
+  margin-top: 20px;
+}
+button {
+  width: 90%;
+  height: 40px;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 7px;
+  margin: auto;
+  color: #f0f0f0;
+  font-size: 20px;
+}
+#download{
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-left: 31%;
+  display: none;
+}
+@media (max-width: 600) {
+  .personalInformation {
+    display: flex;
+    height: 270px;
+    padding: 20px;
+    gap: 5px;
+  }
+  .sectiontwo {
+    display: none;
+  }
+  input {
+    width: 100px;
+  }
+}

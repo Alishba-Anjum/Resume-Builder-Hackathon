@@ -20,12 +20,12 @@
  .resume{
     max-width: 600px;
     margin: 10px auto;
-    height: 100%;
+    height: 70%;
     border-radius: 12px;
     background-color: white ;
     padding-top: 20px;
     box-shadow: 3px 5px 5px  #b6b2b2,
-    0px 3px 5px 5px  #b6b2b2;;
+    0px 3px 5px 5px  #b6b2b2;
  }
  .personalInfo{
     height: 150px;
@@ -36,7 +36,7 @@
 
  }
 h2{
-    color: #333;
+    color: #514646;
     padding-bottom: 20px;
     
  }
@@ -65,24 +65,25 @@ h2{
  }
 
  .education{
-    height: 250px;
+    height: 100px;
     border-bottom: 1px solid #333;
     display: flex;
     flex-direction: column;
-    padding: 10px 35px;
+    padding: 10px 30px;
+    
 
  }
  .education ul{
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
  }
  
  .experience{
-    height: 100px;
+    height: 140px;
     border-bottom: 1px solid #333;
     padding: 30px;
+ 
  }
  .experience p{
     padding-left: 25px;
@@ -129,7 +130,7 @@ h2{
     }
     .personalInfo{
         height: 220px;
-        padding: 0 20px;
+        padding: 0 10px;
         font-size: 15px;
     }
     .section1{
@@ -152,7 +153,7 @@ h2{
         background-size: contain;
     }
     .education{
-        height: 280px;
+        height: 150px;
 
     }
     .education ul li{
